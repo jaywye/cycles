@@ -3,6 +3,7 @@
 <head>
     <title>Cycles</title>
     <meta charset="utf-8" />
+    <link href="font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="bootstrap-theme.min.css" rel="stylesheet" />
     <script src="angular.min.js"></script>
@@ -29,7 +30,7 @@
             <div class="input-group">
                 <input type="text" class="form-control" uib-datepicker-popup="fullDate" ng-model="cycleDate" is-open="calendar.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" ng-change="cycleDateChanged()" />
                 <span class="input-group-btn">
-                    <button type="button" class="btn btn-default" ng-click="calendar.opened = !calendar.opened"><i class="glyphicon glyphicon-calendar"></i></button>
+                    <button type="button" class="btn btn-default" ng-click="calendar.opened = !calendar.opened"><i class="fa fa-calendar fa-fw"></i></button>
                 </span>
             </div>
         </div>
