@@ -32,7 +32,7 @@
             <div class="panel panel-info">
                 <div class="panel-heading"> </div>
                 <ul class="list-group">
-                    <li class="list-group-item" ng-repeat="d in p.ds track by d.id">
+                    <li class="list-group-item" ng-class="{'list-group-item-info': d.hasColor === true, 'list-group-item-warning': d.isScan === true}" ng-repeat="d in p.ds track by d.id">
                         <div class="row">
                             <div class="col-sm-1 text-left"><h4>{{d.name}}</h4></div>
                             <div class="col-sm-2">
